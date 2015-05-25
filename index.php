@@ -33,8 +33,6 @@
 				Organizator układa formularz rejestracji, informacje dot. hoteli, posiłków, imprez dodatkowych.
 				W trakcie rejestracji (po akceptacji artykułu) autor wybiera odpowiednie opcje z formularza rejestracji. System umożliwia wydruki odpowiednich raportów.
 				</p>
-				<input class="button" type="button" onclick=inna2() value="Kliknij" >
-				<input class="button" type="button" onclick=inna() value="Query" >
 				<input class="button" type="button" onclick=<?php echo "lalalalal"?> value="PHP" >
 				<p id="demo"></p>
 			</div>
