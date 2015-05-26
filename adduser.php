@@ -9,11 +9,17 @@
 <body>
 
 	<div id="wrap">
-	<?php include 'php_parts/headmenu.php';?>
+	<?php include 'php_parts/menus/headmenu.php';?>
 		<div id="content-wrap">
-			<?php include 'php_parts/sidemenu.php'; ?>
+			<div id="content-wrap">
+			<div id="sidebar">
+			<?php
+			include 'php_parts/menus/sidemenu.php';
+			?>
+		</div>
 
 			<div id="main">
+			<h1> Dodaj użytkownika </h1>
 			<form action='model/querry_adduser.php' method="post">
 				Login:<br>
 				<input type="text" name="login" required="required"><br><br>

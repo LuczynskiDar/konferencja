@@ -9,9 +9,9 @@
 <body>
 
 	<div id="wrap">
-	<?php include 'php_parts/headmenu.php';?>
+	<?php include 'php_parts/menus/headmenu.php';?>
 		<div id="content-wrap">
-			<?php include 'php_parts/sidemenu.php';?>
+			<?php include 'php_parts/menus/sidemenu.php';?>
 			<div id="main">
 			<?php include 'model/connect.php';?>
 				<a name="TemplateInfo"></a>
