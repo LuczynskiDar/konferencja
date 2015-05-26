@@ -180,9 +180,8 @@ form.searchform input.button {
 /* header */
 #header {
 	position: relative;
-	/*height: 85px;*/
-	height: 120px;
-	background: #FFF	
+	height: 85px;	
+	background: #000 url(headerbg.gif) repeat-x 0% 100%;	
 }
 #header h1#logo {
 
