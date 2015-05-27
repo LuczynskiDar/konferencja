@@ -22,6 +22,33 @@ body {
 	text-align: center;
 }
 
+table.data{
+	border-collapse:collapse;
+	border: 1px solid gray; 
+	padding: 2px;
+	width: auto;
+}
+
+
+table.data td {
+	border-collapse:collapse;
+	border: 1px solid gray; 
+	padding: 5px;
+	text-align: center; 
+}
+
+table.data th {
+	border-collapse:collapse;
+	border: 1px solid gray;
+	background-color:#A9BAC3;
+	color: #FFF;
+	font-weight:  bold; 
+	padding: 8px;
+	text-align: center;
+}
+
+
+
 /* links */
 a { 
 	color: #4284B0;
@@ -106,6 +133,7 @@ form {
 	margin:10px; padding: 0;
 	border: 1px solid #f2f2f2; 
 	background-color: #FAFAFA; 
+	
 }
 label {
 	display:block;

@@ -1,19 +1,15 @@
 <?php
-session_start ();
-if (empty ( $_SESSION ["logged"] )) {
-	session_write_close ();
-	header ( 'Location: index.php' );
-	exit ();
-}
-session_write_close ();
+require 'model/islogged.php';
+isLogged();
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Konferencja</title>
 <link rel="stylesheet" href="images/BrightSide.css" type="text/css" />
-
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script type="text/javascript">
 
 </script>
@@ -32,9 +28,13 @@ session_write_close ();
 		include 'php_parts/menus/reviewermenu.php';
 		include 'php_parts/menus/authormenu.php';
 		include 'php_parts/menus/editormenu.php';
+		include 'php_parts/menus/settingsmenu.php';
 		?>
 		</div>
+		
 			<div id="main">
+			<input type="button" onclick='$("#main").load("php_parts/forms/authorforms/addarticle.php");' value="Sprawdzamy">
+		<a onclick='$("#main").load("php_parts/forms/authorforms/addarticle.php");'> sprawdzamy </a>
 				<h1>
 					Organizacja <span class="green">Konferencji</span>
 				</h1>
@@ -58,9 +58,6 @@ session_write_close ();
 					odpowiednie opcje z formularza rejestracji. System umożliwia
 					wydruki odpowiednich raportów.</p>
 			</div>
-			<?php
-			
-			?>
 		</div>
 	</div>
 </body>

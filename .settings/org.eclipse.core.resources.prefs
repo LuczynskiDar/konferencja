@@ -1,6 +1,8 @@
 eclipse.preferences.version=1
+encoding//php_parts/forms/authorforms/addarticle.php=UTF-8
 encoding//php_parts/menus/authormenu.php=UTF-8
 encoding//php_parts/menus/editormenu.php=UTF-8
 encoding//php_parts/menus/organizermenu.php=UTF-8
 encoding//php_parts/menus/reviewermenu.php=UTF-8
+encoding//php_parts/menus/settingsmenu.php=UTF-8
 encoding/<project>=UTF-8

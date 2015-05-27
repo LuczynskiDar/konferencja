@@ -9,8 +9,11 @@ if (mysqli_num_rows($result) > 0) {
 				<td>User login</>
 				<td>User password</td>
 			</tr>';
+	$row=mysqli_fetch_assoc($result);
+	print_r($row);
 	while ($row=mysqli_fetch_assoc($result))
 	{
+		
 		echo '<tr>';
 		echo "<td>" . $row["user_id"]. "</td><td>" . $row["user_login"]. "</td><td>" . $row["user_password"]. "</td>";
 		echo '</tr>';
